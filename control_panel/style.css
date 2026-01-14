@@ -1,0 +1,140 @@
+
+body {
+    background-color: #1e1e1e;
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+button {
+    border: 2px solid black;
+    background-color: rgba(211, 211, 211, 0.783);
+    color: black;
+    font-family: Arial, sans-serif;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.1s ease;
+}
+
+#off {
+    background-color: #ff0000;
+}
+
+#off:hover {
+    background-color: rgba(255, 0, 0, 0.201);
+    color: black;
+}
+
+button:hover {
+    background-color: rgba(128, 128, 128, 0.42);
+    color: black;
+} 
+
+.label {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+#Commands {
+    text-align: center;
+}
+
+#Terminal {
+    display: flex;           /* Make Terminal a flex container */
+    flex-direction: column; 
+    position: fixed;
+    height: 120px;
+    resize: vertical;
+    overflow: auto; 
+    bottom: 14px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    border: 2px solid #555;
+    font-family: monospace;
+}
+
+#Terminal p {
+    /* width: 100%; */
+    margin: 0 0 5px 0;
+    background-color: black;
+    color: limegreen;
+    font-size: 10;
+    border-bottom: 2px solid #555;
+}
+
+#output {
+    flex: 1;
+    cursor: text;
+    background-color: black;
+    color: limegreen;
+    font-size: 10;
+    overflow-y: auto;
+    border-radius: 3px;
+    line-height: 1.4;
+}
+
+#input_area {
+    display: flex;
+    flex-direction: row;
+    cursor: text;
+    background-color: black;
+    color: limegreen;
+    font-size: 12px;
+    /* padding: 0px; */
+    height: 14px;
+    overflow-y: auto;
+    border-radius: 3px;
+    line-height: 1;
+    font-family: monospace;
+}
+
+#input_area input {
+    flex: 1;               
+    background-color: black;
+    color: limegreen;
+    font-size: 12px;
+    font-family: monospace;
+    border: none;
+    outline: none;
+    /* padding: 0; */
+}
+
+#input_cursor {
+    color: white;
+}
+
+#output::-webkit-scrollbar {
+    width: 6px;
+}
+
+#output::-webkit-scrollbar-track {
+    background: #555;
+}
+
+#output::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.201);
+    border-radius: 2px;
+}
+
+#bottom_bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    height: 12px;
+    padding: 0;
+    border: #555 solid 2px;
+}
+
+#Status {
+    text-align: left;
+    font-size: 12px;
+    color: lime;
+    margin: 0;
+
+}

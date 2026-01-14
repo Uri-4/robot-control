@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Robot Control Panel</title>
+        <body>
+            <button id="Connect">Connect</button>
+            <button id="Disconnect">Disconnect</button>
+            <button id="Reboot">Reboot</button>
+
+            <div id="Commands">
+                <h1 class="label">COMMANDS</h1>
+                <button onclick="sendCommand('IDLE')">Idle</button>
+                <button onclick="sendCommand('WALK')">Walk</button>
+                <button onclick="sendCommand('FOLLOW')">Follow</button>
+                <button id="off" onclick="sendCommand('OFF')">Off</button>
+            </div>
+
+            <div id="Terminal">
+                <p>TERMINAL</p>
+                <div id="output"></div>
+                <div id="input_area">
+                    <span id="input_cursor">></span>
+                    <input type="text" id="input" placeholder="Type command...">
+                </div>
+            </div>
+
+            <div id="bottom_bar">
+                <p id="Status">Status: Not Connected</p>
+            </div>
+            <script src="script.js"></script>
+        </body>
+    </head>
+</html>
